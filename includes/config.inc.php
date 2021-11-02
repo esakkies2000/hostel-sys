@@ -2,10 +2,10 @@
   session_start();
   //$servername = "hms.test"; 
   //change this  accordingly
-  $dBUsername = "root";
-  $dBPassword = "";
-  $dBName = "hostel_management_system";
-  $host = "localhost";
+  $dBUsername = "8tORhkIRdT";
+  $dBPassword = "BFuG1RXoBm";
+  $dBName = "8tORhkIRdT";
+  $host = "remotemysql.com";
  // session_start();
   $conn=mysqli_connect(  $host,$dBUsername, $dBPassword, $dBName);
 
