@@ -58,7 +58,7 @@ echo"<script>alert('Student Succssfully register');</script>";
 	<link rel="stylesheet" href="css/style.css">
 <script type="text/javascript" src="js/jquery-1.11.3-jquery.min.js"></script>
 <script type="text/javascript" src="js/validation.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
 <script>
 function getSeater(val) {
 $.ajax({
