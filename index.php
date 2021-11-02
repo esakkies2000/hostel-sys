@@ -91,7 +91,7 @@ header("location:dashboard.php");
                                      <button type="submit" name="login" class="btn btn-primary btn-block" value="login">Login</button>
 
                                 </form>
-                                 <p class=" w3l-register-p">Login as<a href="Admin/index.php" class="register"> Admin</a></p>
+                                 <p class=" w3l-register-p">Login as<a href="https://hostel-tce.herokuapp.com/admin/" class="register"> Admin</a></p>
                                  <p class=" w3l-register-p">New User<a href="registration.php" class="register"> Register</a></p>
                                   <p class=" w3l-register-p"><a href="forgot-password.php" class="register">Forgot password?</a></p>
           <<div class="text-center text-light" style="color:black;">
