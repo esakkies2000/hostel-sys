@@ -1,6 +1,10 @@
 <?php
 session_start();
-include('includes/config.php');
+$dbuser="8tORhkIRdT";
+$dbpass="BFuG1RXoBm";
+$host="remotemysql.com";
+$db="8tORhkIRdT";
+$mysqli =new mysqli($host,$dbuser, $dbpass, $db);
 if(isset($_POST['login']))
 {
 $email=$_POST['email'];
