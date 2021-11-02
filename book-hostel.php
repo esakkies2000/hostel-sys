@@ -30,7 +30,7 @@ $paddress=$_POST['paddress'];
 $pcity=$_POST['pcity'];
 $pstate=$_POST['pstate'];
 $ppincode=$_POST['ppincode'];
-$query="insert into  registration(hostel_block,roomno,seater,stayfrom,course,regno,firstName,middleName,lastName,gender,contactno,emailid,egycontactno,guardianName,guardianRelation,guardianContactno,corresAddress,corresCIty,corresState,corresPincode,pmntAddress,pmntCity,pmnatetState,pmntPincode) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+$query="INSERT INTO registration(hostel_block,roomno,seater,stayfrom,course,regno,firstName,middleName,lastName,gender,contactno,emailid,egycontactno,guardianName,guardianRelation,guardianContactno,corresAddress,corresCIty,corresState,corresPincode,pmntAddress,pmntCity,pmnatetState,pmntPincode) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 $stmt = $mysqli->prepare($query);
 $rc=$stmt->bind_param('siisssssssisississsisssi',$blockh,$roomno,$seater,$stayfrom,$course,$regno,$fname,$mname,$lname,$gender,$contactno,$emailid,$emcntno,$gurname,$gurrelation,$gurcntno,$caddress,$ccity,$cstate,$cpincode,$paddress,$pcity,$pstate,$ppincode);
 $stmt->execute();
@@ -197,7 +197,7 @@ while($row=$res->fetch_object())
 
 <?php	
 $aid=$_SESSION['id'];
-	$ret="select * from userregistration where id=?";
+	$ret="SELECT * FROM userregistration where id=?";
 		$stmt= $mysqli->prepare($ret) ;
 	 $stmt->bind_param('i',$aid);
 	 $stmt->execute() ;//ok
