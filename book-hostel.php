@@ -1,13 +1,7 @@
 <?php
 session_start();
-include('includes/checklogin.php');
-
-$dbuser="8tORhkIRdT";
-$dbpass="BFuG1RXoBm";
-$host="remotemysql.com";
-$db="8tORhkIRdT";
-$mysqli =new mysqli($host,$dbuser, $dbpass, $db);
-
+include("includes/checklogin.php");
+include("includes/config.php");
 check_login();
 //code for registration
 if(isset($_POST['submit']))
